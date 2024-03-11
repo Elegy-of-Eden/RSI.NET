@@ -187,6 +187,9 @@ public class RawMetadata
                 case "rewind":
                     state = state with {Rewind = true};
                     break;
+                case "movement":
+                    state = state with {Name = state.Name + "_moving", Movement = true};
+                    break;
             }
 
             if (key == "state")

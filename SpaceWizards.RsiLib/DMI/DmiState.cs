@@ -11,7 +11,8 @@ public record DmiState(
     DirectionType Directions = DirectionType.None,
     int Frames = 1,
     List<float>? Delay = null,
-    bool Rewind = false)
+    bool Rewind = false,
+    bool Movement = false)
 {
     public static int GetRewindIndex(int currentIndex, int totalFrames)
     {
